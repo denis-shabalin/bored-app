@@ -4,7 +4,7 @@ const textNode = document.querySelector('.bored__text');
 const titleNode = document.querySelector('.bored__title');
 
 function getNewActivity() {
-   fetch('http://www.boredapi.com/api/activity/')
+   fetch('https://www.boredapi.com/api/activity/')
       .then(response => response.json())
       .then(data => {
          textNode.innerHTML = data.activity;
